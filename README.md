@@ -4,13 +4,32 @@ This dataset is submitted ICIP as dataset paper entitled "DATASET FOR ANTICIPATI
 
 For any possible query regarding the datasets, please contact the first author of the paper.
 
-## How to download the datasets
+# Dataset and Environment
+## Download the datasets
 The full datasets can be downloaded via:
 https://doi.org/10.7910/DVN/HAJM3Y
 
 If you need to download the preprocessed data:
 https://drive.google.com/file/d/1Ea-kuAMeMQqoJrJK4Zo_yz-_TCrFUKia/view?usp=drive_link
 
+## Clone the repo
+```
+git clone https://github.com/WahabF/Wudu-Dataset.git && cd Wudu-Dataset
+```
+
+## Environment setup
+- Create a conda environment:
+```
+conda create -n wudu python=3.8
+```
+- Activate the conda environment:
+```
+conda activate wudu
+```
+- install the required packages:
+```
+pip install -r requirements.txt
+```
 ## Dataset Structure
 
 After downloading the datasets, please transfer the "kfupm" and "kaust" directories into the data directory. These folders contain data sourced from two distinct locations. Within these directories, each subfolder corresponds to a unique session, comprising multiple Wudu experiments (samples). 
@@ -18,8 +37,8 @@ After downloading the datasets, please transfer the "kfupm" and "kaust" director
 An example of a sample directory in kfupm session 1:
 `/data/kfupm/1/sample 1`
 
-
-### Sample File Contents
+# Data Files Content
+## Sample File Contents
 Each sample consists of two files: 
 - `coordinates.mat`: Contains a sequence of body joint coordinates.
 - `labels.mat`: Contains the corresponding sequence labels, ensuring synchronization between the coordinates and labels.
@@ -57,24 +76,14 @@ The 8-class label set described in the paper is as follows:
 7. Head wiping [tap off]
 8. Foot wiping [tap off]
 
-Note: In the code, the numbering is from 0 to 13 not 1 to 14, and from 0 to 7, not 1 to 8.
-Note: The numbering used in the code and described above is different from the order in the paper; the order in the paper is reorganized for better illustration.
-
-### Default labelset of 8 classes
-Focusing on the rest of the non excluded classes, the classes can be mapped using our framework to 2, 5, 7, 8  (default), 10, or 11 classes. Where similar actions are grouped, in the case of binary (2) classes are grouped based on wither they require water tap on (class 1) or water tap off (class 0).
-The 8 classes labelset decribed in the paper this is the numbering used in the coder:
-1. Collect water [tap on]
-2. Non Wudu action [tap off]
-3. Hand washing [tap on]
-4. Mouth & nose washing [tap off]
-5. Face washing [tap off]
-6. Arm washing [tap on]
-7. Head wiping [tap off]
-8. Foot wiping [tap off]
-
 Notes: 
 - The numbering in code is from 0 to 7 not 1 to 8.
 - The numbering used in the code is different from the order in the paper, the order in the paper is reorganized for better illustration.
+
+# Generate .h5 data file
+
+
+
 
 ## Citation
 @data{DVN/HAJM3Y_2024,
