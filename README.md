@@ -4,20 +4,20 @@ This dataset is submitted ICIP as dataset paper entitled "DATASET FOR ANTICIPATI
 
 For any possible query regarding the datasets, please contact the first author of the paper.
 
-# Dataset and Environment
-## Download the datasets
+## Dataset and Environment
+### Download the datasets
 The full datasets can be downloaded via:
 https://doi.org/10.7910/DVN/HAJM3Y
 
 If you need to download the preprocessed data:
 https://drive.google.com/file/d/1Ea-kuAMeMQqoJrJK4Zo_yz-_TCrFUKia/view?usp=drive_link
 
-## Clone the repo
+### Clone the repo
 ```
 git clone https://github.com/WahabF/Wudu-Dataset.git && cd Wudu-Dataset
 ```
 
-## Environment setup
+### Environment setup
 - Create a conda environment:
 ```
 conda create -n wudu python=3.8
@@ -30,15 +30,15 @@ conda activate wudu
 ```
 pip install -r requirements.txt
 ```
-## Dataset Structure
+
+## Data Files Content
 
 After downloading the datasets, please transfer the "kfupm" and "kaust" directories into the data directory. These folders contain data sourced from two distinct locations. Within these directories, each subfolder corresponds to a unique session, comprising multiple Wudu experiments (samples). 
 
 An example of a sample directory in kfupm session 1:
 `/data/kfupm/1/sample 1`
 
-# Data Files Content
-## Sample File Contents
+### Sample File Contents
 Each sample consists of two files: 
 - `coordinates.mat`: Contains a sequence of body joint coordinates.
 - `labels.mat`: Contains the corresponding sequence labels, ensuring synchronization between the coordinates and labels.
@@ -80,9 +80,10 @@ Notes:
 - The numbering in code is from 0 to 7 not 1 to 8.
 - The numbering used in the code is different from the order in the paper, the order in the paper is reorganized for better illustration.
 
-# Generate .h5 data file
-
-
+## Generate .h5 data file
+```
+python data_get.py --data_root_dir /data --output_dir /data --classes 8 --window 20 --nextPredFrame 3
+```
 
 
 ## Citation
