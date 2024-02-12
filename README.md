@@ -71,8 +71,10 @@ The 8 classes labelset decribed in the paper this is the numbering used in the c
 6. Arm washing [tap on]
 7. Head wiping [tap off]
 8. Foot wiping [tap off]
-Note: The numbering in code is from 0 to 7 not 1 to 8.
-Note: The numbering used in the code is different from the order in the paper, the order in the paper is reorganized for better illustration.
+
+Notes: 
+- The numbering in code is from 0 to 7 not 1 to 8.
+- The numbering used in the code is different from the order in the paper, the order in the paper is reorganized for better illustration.
 
 ## Citation
 @data{DVN/HAJM3Y_2024,
