@@ -4,6 +4,13 @@ This dataset is submitted ICIP as dataset paper entitled "DATASET FOR ANTICIPATI
 
 For any possible query regarding the datasets, please contact the first author of the paper.
 
+## To-do:
+- [x] Data decription
+- [x] Data .h5 generation codes
+- [ ] Torch data loader example
+- [ ] Metrics generation codes
+- [ ] Vizualization codes
+
 ## Dataset and Environment
 ### Download the datasets
 The full datasets can be downloaded via:
