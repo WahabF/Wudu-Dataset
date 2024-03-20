@@ -1,11 +1,11 @@
 # Wudu Dataset
 
-This dataset is submitted to ICIP 2024 as dataset paper entitled "DATASET FOR ANTICIPATING FAST-CHANGING WUDU ACTIONS IN WATER TAP INTERACTIONS".
+This dataset is submitted to ICIP 2024 as a dataset paper entitled "DATASET FOR ANTICIPATING FAST-CHANGING WUDU ACTIONS IN WATER TAP INTERACTIONS".
 
-For any possible query regarding the datasets, please contact the first author of the paper.
+For any possible query regarding the datasets, please contact the paper's first author.
 
 ## To-do:
-- [x] Data decription
+- [x] Data description
 - [x] Data .h5 generation codes
 - [ ] Torch data loader example
 - [ ] Metrics generation codes
